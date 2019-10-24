@@ -8,13 +8,13 @@ namespace open_lab_02._5
 
         public static bool DivisibleByFive(int a)
         {
-            return true;
+            return (a % 5 == 0);
         }
     
         static void Main(string[] args)
         {
             int a = Convert.ToInt32(Console.ReadLine());
-            if (a % 5 == 0)
+            if (DivisibleByFive(a))
             { 
                 Console.WriteLine(true);
             }
